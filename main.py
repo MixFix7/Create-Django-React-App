@@ -3,6 +3,8 @@ import shutil
 import subprocess
 from colorama import Fore, Style
 from tqdm import tqdm
+import sys
+import time
 
 
 def open_project_in_pycharm(django_project):

@@ -7,9 +7,7 @@ export const Home = () => {
 
   return (
     <div>
-        <h1>Welcome, {name.map((name) => (
-            name.name
-        ))}</h1>
+        <h1>Welcome, {name.name}</h1>
         <h2>Let's start building a new Website?</h2>
     </div>
   )

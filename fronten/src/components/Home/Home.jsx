@@ -6,9 +6,9 @@ export const Home = () => {
     console.log(name)
 
   return (
-    <div>
-        <h1>Welcome, {name.name}</h1>
-        <h2>Let's start building a new Website?</h2>
+    <div className='flex flex-col items-center justify-center h-screen'>
+        <h1 className='text-6xl'>Welcome, {name.name}</h1>
+        <h2 className='text-4xl mt-3'>Let's start creating a new Website?</h2>
     </div>
   )
 }

@@ -4,11 +4,11 @@ import axios from "axios";
 
 const router = createBrowserRouter([
     {
-        path: '/:id',
+        path: '/',
         element: <Home/>,
-        loader: async ({params, request}) => {
+        loader: async ({request}) => {
             try {
-                const response = await axios.get(`http://localhost:8000/api/f/${params.id}/`);
+                const response = await axios.get(`http://localhost:8000/api/f/${1}/`);
                 return response.data
             
               } catch (error) {
@@ -16,7 +16,8 @@ const router = createBrowserRouter([
                 return null
               }
             }
-        }
+      },    
+        
 ])
 
 export default router
